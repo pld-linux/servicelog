@@ -1,12 +1,12 @@
 Summary:	Servicelog tools
 Summary(pl.UTF-8):	Narzędzia do obsługi logu serwisowego
 Name:		servicelog
-Version:	1.1.9
+Version:	1.1.11
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/linux-diag/%{name}-%{version}.tar.gz
-# Source0-md5:	6a548c51c6273f2cfe97205a66f9f9c2
+# Source0-md5:	1888723360085b1132a3f25b8c8a84a0
 URL:		http://linux-diag.sourceforge.net/servicelog/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
@@ -61,4 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_sbindir}/slog_common_event
 %{_mandir}/man8/log_repair_action.8*
 %{_mandir}/man8/servicelog.8*
+%{_mandir}/man8/servicelog_manage.8*
 %{_mandir}/man8/servicelog_notify.8*
