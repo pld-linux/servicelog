@@ -1,12 +1,12 @@
 Summary:	Servicelog tools
 Summary(pl.UTF-8):	Narzędzia do obsługi logu serwisowego
 Name:		servicelog
-Version:	1.1.14
+Version:	1.1.15
 Release:	1
 License:	GPL v2+ with librtas exception
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/linux-diag/%{name}-%{version}.tar.gz
-# Source0-md5:	2435b739238b1dfb018d04b96416e4a8
+# Source0-md5:	643d19de914784d3a0f51d420c4c8f15
 URL:		http://linux-diag.sourceforge.net/servicelog/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
