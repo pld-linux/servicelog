@@ -1,17 +1,18 @@
 Summary:	Servicelog tools
 Summary(pl.UTF-8):	Narzędzia do obsługi logu serwisowego
 Name:		servicelog
-Version:	1.1.15
+Version:	1.1.16
 Release:	1
 License:	GPL v2+ with librtas exception
 Group:		Applications/System
-Source0:	http://downloads.sourceforge.net/linux-diag/%{name}-%{version}.tar.gz
-# Source0-md5:	643d19de914784d3a0f51d420c4c8f15
-URL:		http://linux-diag.sourceforge.net/servicelog/
-BuildRequires:	autoconf >= 2.59
+#Source0Download: https://github.com/power-ras/servicelog/tags
+Source0:	https://github.com/power-ras/servicelog/archive/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	3231e35f39f0453ca30b71942b78b075
+URL:		https://github.com/power-ras/servicelog
+BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake
 BuildRequires:	libservicelog-devel
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2
 # relies on ppc-specific libservicelog
 ExclusiveArch:	ppc ppc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
